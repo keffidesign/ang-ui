@@ -10,4 +10,6 @@ import {Component, View} from 'angular2/core';
 
 export class LearningComponent {
 
+    //constructor(public list: any) {}
+
 }
