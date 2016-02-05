@@ -5,6 +5,8 @@ declare module 'applugins' {
         event(): any;
     }
 
+    export function evest()
+
     export function create(config: any)
 
 }
