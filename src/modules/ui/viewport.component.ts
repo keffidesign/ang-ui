@@ -4,9 +4,11 @@ import {LearningComponent} from '../learning/learning.component.ts';
 import {InfoComponent} from '../info/info.component.ts';
 import {AppNav} from './nav.component.ts';
 import {DynamicRouteConfigurator} from './DynamicRouteConfigurator.ts';
+import {DynamicComponentLoader} from 'angular2/core';
 
 @Component({
     selector: 'ui-root',
+    //provider: [DynamicComponentLoader, DynamicRouteConfigurator],
     viewProviders: [DynamicRouteConfigurator],
     directives: [ROUTER_DIRECTIVES, AppNav],
     encapsulation: ViewEncapsulation.None,

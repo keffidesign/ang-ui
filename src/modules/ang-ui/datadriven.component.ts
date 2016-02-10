@@ -1,5 +1,5 @@
 import {Input} from 'angular2/core';
-import BaseComponent from './base.component.ts';
+import BaseComponent from './BaseComponent.ts';
 
 export default class DataDrivenComponent extends BaseComponent {
 
@@ -12,7 +12,7 @@ export default class DataDrivenComponent extends BaseComponent {
 
         const {dataDependsOn} = this;
 
-        this.addEventListener(dataDependsOn, this.setData)
+        this.addEventListener(dataDependsOn, this.setData);
 
         console.log('DataDrivenComponent:constructor', this);
 

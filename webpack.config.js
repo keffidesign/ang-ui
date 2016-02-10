@@ -37,6 +37,22 @@ module.exports = {
                     presets: ['es2015', 'stage-0']
                 }
             }
+            ,
+            {
+                test: /\.jsx$/,
+                loader: 'babel-loader',
+                query: {
+                    plugins: [
+                        [
+                            'transform-react-jsx'
+                            ,
+                            {
+                                pragma: 'this.createElement'
+                            }
+                        ]
+                    ]
+                }
+            }
         ]
     }
 };

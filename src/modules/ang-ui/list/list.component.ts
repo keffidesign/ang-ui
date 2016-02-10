@@ -1,5 +1,5 @@
 import {Component, View, Input} from 'angular2/core';
-import BaseComponent from '../base.component.ts';
+import BaseComponent from '../BaseComponent.ts';
 import DataDrivenComponent from '../datadriven.component.ts';
 
 @Component({
